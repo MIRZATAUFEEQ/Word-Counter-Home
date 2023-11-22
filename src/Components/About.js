@@ -44,9 +44,6 @@ let mystyle={
                     </div>
                 </div>
             </div>
-            {/* <div className="container">
-                <button onClick={togglestyle} type="button" class="btn btn-dark my-2">{btn}</button>
-            </div> */}
         </div>
     )
 }
