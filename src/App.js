@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
+import About from './Components/About';
 import Form from './Components/form';
 import Alert from './Components/Alert';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   const [mode, setmode] = useState('light')
@@ -11,12 +12,10 @@ function App() {
     if (mode === 'light') {
       setmode('dark')
       document.body.style.backgroundColor = '#042745'
-      showalert("Dark mode has been enabled ", "success")
     }
     else {
       setmode('light')
       document.body.style.backgroundColor = 'white'
-      showalert("light mode has been enabled ", "success")
     }
   }
   const [alert, setAlert] = useState(null)
@@ -31,20 +30,20 @@ function App() {
   }
   return (
     <>
-      {/* <Router> */}
+      <Router>
         {/* default props  */}
         {/* <Navbar/> */}
 
         <Navbar title=<h2>word counter</h2> mode={mode} togglemode={togglemode} />
         <Alert alert={alert} />
-        <Form showalert={showalert} heading="Enter text here" mode={mode} />
+        {/* <Form showalert={showalert} heading="Enter text here" mode={mode} /> */}
 
         {/* Route definitions */}
-        {/* <Routes>
+        <Routes>
           <Route path='/' element={<Form showalert={showalert} heading="Enter text here" mode={mode} />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About mode={mode}/>} />
         </Routes>
-      </Router> */}
+      </Router>
     </>
   );
 }
