@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Word-Counter-Home/static/css/main.239bb308.css",
-    "main.js": "/Word-Counter-Home/static/js/main.b6119f43.js",
+    "main.js": "/Word-Counter-Home/static/js/main.88043a0b.js",
     "static/js/787.28cb0dcd.chunk.js": "/Word-Counter-Home/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/Word-Counter-Home/index.html",
     "main.239bb308.css.map": "/Word-Counter-Home/static/css/main.239bb308.css.map",
-    "main.b6119f43.js.map": "/Word-Counter-Home/static/js/main.b6119f43.js.map",
+    "main.88043a0b.js.map": "/Word-Counter-Home/static/js/main.88043a0b.js.map",
     "787.28cb0dcd.chunk.js.map": "/Word-Counter-Home/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.239bb308.css",
-    "static/js/main.b6119f43.js"
+    "static/js/main.88043a0b.js"
   ]
 }
